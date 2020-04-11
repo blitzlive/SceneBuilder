@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="588.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <BorderPane layoutY="154.0" prefHeight="434.0" prefWidth="766.0">
+         <top>
+            <TabPane prefHeight="101.0" prefWidth="766.0" styleClass="tabpane" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                  <Tab styleClass="freetime" text="Freizeit und Lifestyle">
+                      <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                              <children>
+                                  <ButtonBar layoutX="69.0" layoutY="16.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="650.0">
+                                      <buttons>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openlifestyledir" prefHeight="25.0" prefWidth="136.0" styleClass="lifedir" text="Lifestyle" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openyoutube" styleClass="youtube" text="Youtube" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openmydealz" styleClass="mydealz" text="Mydealz" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#opengoogle" styleClass="google" text="Google" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openspoty" styleClass="spoty" text="Spotify" />
+                                      </buttons>
+                                  </ButtonBar>
+                              </children>
+                          </AnchorPane>
+                      </content>
+                  </Tab>
+                  <Tab styleClass="freetime" text="Social Media">
+                      <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                              <children>
+                                  <ButtonBar layoutX="69.0" layoutY="16.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="650.0">
+                                      <buttons>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openXing" prefHeight="25.0" prefWidth="366.0" styleClass="xing" text="Xing" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openinstagram" styleClass="instagram" text="Instagram" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openfacebook" styleClass="facebook" text="Facebook" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openwhatsapp" styleClass="whatsapp" text="Whatsapp" />
+                                      </buttons>
+                                  </ButtonBar>
+                              </children>
+                          </AnchorPane>
+                      </content>
+                  </Tab>
+                <Tab styleClass="university" text="Universität">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ButtonBar layoutX="69.0" layoutY="16.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="650.0">
+                                <buttons>
+                                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#openHSdirectory" prefHeight="25.0" prefWidth="136.0" styleClass="unidir" text="SemesterDir" />
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#openCitavi" styleClass="citavi" text="Citavi" />
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#openHSMoodle" styleClass="hsmoodle" text="Moodle" />
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#openHSMail" styleClass="hsmail" text="HS- Mail" />
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#openHSweb" styleClass="hs" text="Hochschule" />
+                                </buttons>
+                              </ButtonBar>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab styleClass="work" text="Arbeit {Siemens/Hochschule}">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ButtonBar layoutX="69.0" layoutY="16.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="650.0">
+                                 <buttons>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#openDirHSges" prefHeight="25.0" prefWidth="136.0" styleClass="hsworkdir" text="HS Ordner" />
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#openSiemensdir" styleClass="siemensdir" text="Siemens" />
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#openHSMailWork" styleClass="hsmailwork" text="Scout Mail" />
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#openWorktime" styleClass="lists" text="HS- Scout" />
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#openProject" styleClass="project" text="Projekte" />
+                                 </buttons>
+                              </ButtonBar>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab styleClass="fullstock" text="Steuerunterlagen / Aktien">
+                      <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                              <children>
+                                  <ButtonBar layoutX="69.0" layoutY="16.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="650.0">
+                                      <buttons>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openDirFin" prefHeight="25.0" prefWidth="136.0" styleClass="dirov" text="Ordner" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openTaxdir" styleClass="taxdir" text="Steuer" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openTax" styleClass="tax" text="Elster" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openDepot" styleClass="depotov" text="Depot.OV" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#openStocks" styleClass="stocks" text="DAX T/F" />
+                                      </buttons>
+                                  </ButtonBar>
+                              </children>
+                          </AnchorPane>
+                      </content>
+                  </Tab>
+                  <Tab styleClass="finance" text="Finanzen">
+                      <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                              <children>
+                                  <ButtonBar layoutX="69.0" layoutY="16.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="650.0">
+                                      <buttons>
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#opennaspa" prefHeight="25.0" prefWidth="429.0" styleClass="nasp" text="Naspa" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#opendkb" styleClass="DKB" text="DKB" />
+                                          <Button alignment="CENTER" mnemonicParsing="false" onAction="#open1822direct" styleClass="Directbank" text="1822- Direkt" />
+                                      </buttons>
+                                  </ButtonBar>
+                              </children>
+                          </AnchorPane>
+                      </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </top>
+         <left>
+            <VBox alignment="CENTER" prefHeight="334.0" prefWidth="135.0" styleClass="Vbox" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="36.0" prefWidth="100.0" styleClass="verwaltung" text="Allgemein" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#openbrowser" prefHeight="60.0" prefWidth="100.0" styleClass="chrome">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#openmails" prefHeight="60.0" prefWidth="100.0" styleClass="mails">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#openexcel" prefHeight="60.0" prefWidth="100.0" styleClass="office">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#opensystemcontroll" prefHeight="60.0" prefWidth="100.0" styleClass="system">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#openfulldir" prefHeight="60.0" prefWidth="100.0" styleClass="directory">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children></VBox>
+         </left>
+         <center>
+            <BarChart fx:id="chart1" prefHeight="334.0" prefWidth="440.0" styleClass="Chartstyle" BorderPane.alignment="CENTER">
+              <xAxis>
+                <CategoryAxis label="Zeitplanung" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="Prozentual %" side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </center>
+         <right>
+            <AnchorPane prefHeight="347.0" prefWidth="200.0" styleClass="panegrey" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane fx:id="Planerimg" layoutY="87.0" prefHeight="247.0" prefWidth="206.0" styleClass="Planerimg">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="95.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="105.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+                  <DatePicker fx:id="calenderTime" layoutY="30.0" onAction="#openCalender" prefHeight="26.0" prefWidth="208.0" styleClass="datestamp" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="-3.0" prefHeight="34.0" prefWidth="206.0" styleClass="aktuellesdatum" text="Aktuelles Datum" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Arial Black" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="65.0" prefHeight="25.0" prefWidth="96.0" styleClass="uhrzeit" text="Uhrzeit:">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timestamp" layoutX="121.0" layoutY="65.0" prefHeight="22.0" prefWidth="88.0" styleClass="timestamp" text="Hier kommt die Uhrzeit hin" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+      <GridPane prefHeight="155.0" prefWidth="767.0" styleClass="Tophollidayimg">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>
